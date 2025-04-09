@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Lệnh Sản Xuất</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        h2 {
+            color: red;
+        }
+        .form-box {
+            border: 1px solid gray;
+            padding: 20px;
+            width: 600px;
+        }
+        .section-title {
+            color: blue;
+            font-weight: bold;
+        }
+        label {
+            display: inline-block;
+            width: 120px;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="date"], select {
+            width: 250px;
+        }
+        .save-btn {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Lệnh Sản Xuất /Production Order:::</h2>
+    <div class="form-box">
+        <div class="section-title">Phương Pháp In</div>
+        <input type="radio" name="method" value="thermal"> Thermal<br>
+        <input type="radio" name="method" value="offset"> Offset<br>
+        <input type="radio" name="method" value="digital"> Digital<br><br>
+
+        <label for="no">No.</label>
+        <input type="text" id="no" value="TH2108-XXXXX"><br>
+
+        <label for="date">Ngày tạo/Date:</label>
+        <input type="date" id="date"><br>
+
+        <label for="item">Item/Mục:</label>
+        <select id="item">
+            <option value="05H01398">05H01398</option>
+        </select><br>
+
+        <label for="qty">Số lượng/Qty:</label>
+        <input type="text" id="qty" value="toi la toi"><br>
+
+        <label for="ship">Gửi đến/Ship to:</label>
+        <input type="text" id="ship"><br>
+
+        <label for="note">Ghi chú/Note:</label>
+        <input type="text" id="note"><br>
+
+        <div class="save-btn">
+            <button style="color: red;">Save</button>
+        </div>
+    </div>
+</body>
+</html>
